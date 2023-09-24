@@ -3,344 +3,50 @@ import "./App.css";
 
 import MyResponsiveRadar from "./MyResponsiveRadar"; // Import your MyResponsiveRadar component
 
-function App() {
-  // Sample data for the radar chart
-  const data = [
-    {
-      taste: "Insomnia",
-      chardonay: 9,
-      carmenere: 15,
-      syrah: 7,
-    },
-    {
-      taste: "Restless",
-      chardonay: 5,
-      carmenere: 7,
-      syrah: 18,
-    },
-    {
-      taste: "Mania",
-      chardonay: 6,
-      carmenere: 4,
-      syrah: 10,
-    },
-    {
-      taste: "Headaches",
-      chardonay: 7,
-      carmenere: 18,
-      syrah: 5,
-    },
-    {
-      taste: "Self_harm",
-      chardonay: 3,
-      carmenere: 5,
-      syrah: 11,
-    },
-  ];
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Radar Chart Example</h1>
-      </header>
-      <main>
-        <div className="chart-container">
-          {/* Use the MyResponsiveRadar component with your data */}
-          <MyResponsiveRadar data={data} />
-        </div>
-      </main>
-    </div>
-  );
-}
-
-export default App;
-
-// import MyResponsiveLine from "./Responsiveline"; // Import your MyResponsiveLine component
-
 // function App() {
-//   // Sample data for the line chart
+//   // Sample data for the radar chart
 //   const data = [
 //     {
-//       id: "Flashbacks",
-//       color: "hsl(9, 70%, 50%)",
-//       data: [
-//         {
-//           x: "1",
-//           y: 67,
-//         },
-//         {
-//           x: "2",
-//           y: 177,
-//         },
-//         {
-//           x: "3",
-//           y: 266,
-//         },
-//         {
-//           x: "4",
-//           y: 285,
-//         },
-//         {
-//           x: "5",
-//           y: 84,
-//         },
-//         {
-//           x: "6",
-//           y: 133,
-//         },
-//         {
-//           x: "7",
-//           y: 181,
-//         },
-//         {
-//           x: "8",
-//           y: 237,
-//         },
-//         {
-//           x: "9",
-//           y: 95,
-//         },
-//         {
-//           x: "10",
-//           y: 140,
-//         },
-//         {
-//           x: "11",
-//           y: 77,
-//         },
-//         {
-//           x: "12",
-//           y: 152,
-//         },
-//       ],
+//       taste: "Insomnia",
+//       chardonay: 9,
+//       carmenere: 15,
+//       syrah: 7,
 //     },
 //     {
-//       id: "Nightmares",
-//       color: "hsl(319, 70%, 50%)",
-//       data: [
-//         {
-//           x: "1",
-//           y: 67,
-//         },
-//         {
-//           x: "2",
-//           y: 177,
-//         },
-//         {
-//           x: "3",
-//           y: 266,
-//         },
-//         {
-//           x: "4",
-//           y: 215,
-//         },
-//         {
-//           x: "5",
-//           y: 84,
-//         },
-//         {
-//           x: "6",
-//           y: 133,
-//         },
-//         {
-//           x: "7",
-//           y: 181,
-//         },
-//         {
-//           x: "8",
-//           y: 237,
-//         },
-//         {
-//           x: "9",
-//           y: 95,
-//         },
-//         {
-//           x: "10",
-//           y: 140,
-//         },
-//         {
-//           x: "11",
-//           y: 73,
-//         },
-//         {
-//           x: "12",
-//           y: 152,
-//         },
-//       ],
+//       taste: "Restless",
+//       chardonay: 5,
+//       carmenere: 7,
+//       syrah: 18,
 //     },
 //     {
-//       id: "Isolation",
-//       color: "hsl(266, 70%, 50%)",
-//       data: [
-//         {
-//           x: "1",
-//           y: 67,
-//         },
-//         {
-//           x: "2",
-//           y: 173,
-//         },
-//         {
-//           x: "3",
-//           y: 266,
-//         },
-//         {
-//           x: "4",
-//           y: 285,
-//         },
-//         {
-//           x: "5",
-//           y: 84,
-//         },
-//         {
-//           x: "6",
-//           y: 113,
-//         },
-//         {
-//           x: "7",
-//           y: 181,
-//         },
-//         {
-//           x: "8",
-//           y: 237,
-//         },
-//         {
-//           x: "9",
-//           y: 95,
-//         },
-//         {
-//           x: "10",
-//           y: 110,
-//         },
-//         {
-//           x: "11",
-//           y: 79,
-//         },
-//         {
-//           x: "12",
-//           y: 112,
-//         },
-//       ],
+//       taste: "Mania",
+//       chardonay: 6,
+//       carmenere: 4,
+//       syrah: 10,
 //     },
 //     {
-//       id: "No_in_person_contact",
-//       color: "hsl(67, 70%, 50%)",
-//       data: [
-//         {
-//           x: "1",
-//           y: 67,
-//         },
-//         {
-//           x: "2",
-//           y: 147,
-//         },
-//         {
-//           x: "3",
-//           y: 366,
-//         },
-//         {
-//           x: "4",
-//           y: 285,
-//         },
-//         {
-//           x: "5",
-//           y: 64,
-//         },
-//         {
-//           x: "6",
-//           y: 133,
-//         },
-//         {
-//           x: "7",
-//           y: 141,
-//         },
-//         {
-//           x: "8",
-//           y: 237,
-//         },
-//         {
-//           x: "9",
-//           y: 95,
-//         },
-//         {
-//           x: "10",
-//           y: 130,
-//         },
-//         {
-//           x: "11",
-//           y: 77,
-//         },
-//         {
-//           x: "12",
-//           y: 152,
-//         },
-//       ],
+//       taste: "Headaches",
+//       chardonay: 7,
+//       carmenere: 18,
+//       syrah: 5,
 //     },
 //     {
-//       id: "Restless",
-//       color: "hsl(343, 70%, 50%)",
-//       data: [
-//         {
-//           x: "1",
-//           y: 67,
-//         },
-//         {
-//           x: "2",
-//           y: 177,
-//         },
-//         {
-//           x: "3",
-//           y: 226,
-//         },
-//         {
-//           x: "4",
-//           y: 255,
-//         },
-//         {
-//           x: "5",
-//           y: 84,
-//         },
-//         {
-//           x: "6",
-//           y: 123,
-//         },
-//         {
-//           x: "7",
-//           y: 181,
-//         },
-//         {
-//           x: "8",
-//           y: 267,
-//         },
-//         {
-//           x: "9",
-//           y: 95,
-//         },
-//         {
-//           x: "10",
-//           y: 130,
-//         },
-//         {
-//           x: "11",
-//           y: 77,
-//         },
-//         {
-//           x: "12",
-//           y: 152,
-//         },
-//       ],
+//       taste: "Self_harm",
+//       chardonay: 3,
+//       carmenere: 5,
+//       syrah: 11,
 //     },
 //   ];
 
 //   return (
 //     <div className="App">
 //       <header className="App-header">
-//         <h1>Line Chart Example</h1>
+//         <h1>Radar Chart Example</h1>
 //       </header>
 //       <main>
 //         <div className="chart-container">
-//           {/* Use the MyResponsiveLine component with your data */}
-//           <MyResponsiveLine data={data} />
+//           {/* Use the MyResponsiveRadar component with your data */}
+//           <MyResponsiveRadar data={data} />
 //         </div>
 //       </main>
 //     </div>
@@ -348,6 +54,300 @@ export default App;
 // }
 
 // export default App;
+
+import MyResponsiveLine from "./Responsiveline"; // Import your MyResponsiveLine component
+
+function App() {
+  // Sample data for the line chart
+  const data = [
+    {
+      id: "Flashbacks",
+      color: "hsl(9, 70%, 50%)",
+      data: [
+        {
+          x: "1",
+          y: 67,
+        },
+        {
+          x: "2",
+          y: 177,
+        },
+        {
+          x: "3",
+          y: 266,
+        },
+        {
+          x: "4",
+          y: 285,
+        },
+        {
+          x: "5",
+          y: 84,
+        },
+        {
+          x: "6",
+          y: 133,
+        },
+        {
+          x: "7",
+          y: 181,
+        },
+        {
+          x: "8",
+          y: 237,
+        },
+        {
+          x: "9",
+          y: 95,
+        },
+        {
+          x: "10",
+          y: 140,
+        },
+        {
+          x: "11",
+          y: 77,
+        },
+        {
+          x: "12",
+          y: 152,
+        },
+      ],
+    },
+    {
+      id: "Nightmares",
+      color: "hsl(319, 70%, 50%)",
+      data: [
+        {
+          x: "1",
+          y: 67,
+        },
+        {
+          x: "2",
+          y: 177,
+        },
+        {
+          x: "3",
+          y: 266,
+        },
+        {
+          x: "4",
+          y: 215,
+        },
+        {
+          x: "5",
+          y: 84,
+        },
+        {
+          x: "6",
+          y: 133,
+        },
+        {
+          x: "7",
+          y: 181,
+        },
+        {
+          x: "8",
+          y: 237,
+        },
+        {
+          x: "9",
+          y: 95,
+        },
+        {
+          x: "10",
+          y: 140,
+        },
+        {
+          x: "11",
+          y: 73,
+        },
+        {
+          x: "12",
+          y: 152,
+        },
+      ],
+    },
+    {
+      id: "Isolation",
+      color: "hsl(266, 70%, 50%)",
+      data: [
+        {
+          x: "1",
+          y: 67,
+        },
+        {
+          x: "2",
+          y: 173,
+        },
+        {
+          x: "3",
+          y: 266,
+        },
+        {
+          x: "4",
+          y: 285,
+        },
+        {
+          x: "5",
+          y: 84,
+        },
+        {
+          x: "6",
+          y: 113,
+        },
+        {
+          x: "7",
+          y: 181,
+        },
+        {
+          x: "8",
+          y: 237,
+        },
+        {
+          x: "9",
+          y: 95,
+        },
+        {
+          x: "10",
+          y: 110,
+        },
+        {
+          x: "11",
+          y: 79,
+        },
+        {
+          x: "12",
+          y: 112,
+        },
+      ],
+    },
+    {
+      id: "No_in_person_contact",
+      color: "hsl(67, 70%, 50%)",
+      data: [
+        {
+          x: "1",
+          y: 67,
+        },
+        {
+          x: "2",
+          y: 147,
+        },
+        {
+          x: "3",
+          y: 366,
+        },
+        {
+          x: "4",
+          y: 285,
+        },
+        {
+          x: "5",
+          y: 64,
+        },
+        {
+          x: "6",
+          y: 133,
+        },
+        {
+          x: "7",
+          y: 141,
+        },
+        {
+          x: "8",
+          y: 237,
+        },
+        {
+          x: "9",
+          y: 95,
+        },
+        {
+          x: "10",
+          y: 130,
+        },
+        {
+          x: "11",
+          y: 77,
+        },
+        {
+          x: "12",
+          y: 152,
+        },
+      ],
+    },
+    {
+      id: "Restless",
+      color: "hsl(343, 70%, 50%)",
+      data: [
+        {
+          x: "1",
+          y: 67,
+        },
+        {
+          x: "2",
+          y: 177,
+        },
+        {
+          x: "3",
+          y: 226,
+        },
+        {
+          x: "4",
+          y: 255,
+        },
+        {
+          x: "5",
+          y: 84,
+        },
+        {
+          x: "6",
+          y: 123,
+        },
+        {
+          x: "7",
+          y: 181,
+        },
+        {
+          x: "8",
+          y: 267,
+        },
+        {
+          x: "9",
+          y: 95,
+        },
+        {
+          x: "10",
+          y: 130,
+        },
+        {
+          x: "11",
+          y: 77,
+        },
+        {
+          x: "12",
+          y: 152,
+        },
+      ],
+    },
+  ];
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Line Chart Example</h1>
+      </header>
+      <main>
+        <div className="chart-container">
+          {/* Use the MyResponsiveLine component with your data */}
+          <MyResponsiveLine data={data} />
+        </div>
+      </main>
+    </div>
+  );
+}
+
+export default App;
 
 // import MyResponsiveAreaBump from "./MyResponsiveAreaBump";
 
