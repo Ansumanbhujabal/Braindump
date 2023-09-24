@@ -1,59 +1,59 @@
 import React from "react";
 import "./App.css";
 
-// import MyResponsiveRadar from "./MyResponsiveRadar"; // Import your MyResponsiveRadar component
+import MyResponsiveRadar from "./MyResponsiveRadar"; // Import your MyResponsiveRadar component
 
-// function App() {
-//   // Sample data for the radar chart
-//   const data = [
-//     {
-//       taste: "Insomnia",
-//       chardonay: 9,
-//       carmenere: 15,
-//       syrah: 7,
-//     },
-//     {
-//       taste: "Restless",
-//       chardonay: 5,
-//       carmenere: 7,
-//       syrah: 18,
-//     },
-//     {
-//       taste: "Mania",
-//       chardonay: 6,
-//       carmenere: 4,
-//       syrah: 10,
-//     },
-//     {
-//       taste: "Headaches",
-//       chardonay: 7,
-//       carmenere: 18,
-//       syrah: 5,
-//     },
-//     {
-//       taste: "Self_harm",
-//       chardonay: 3,
-//       carmenere: 5,
-//       syrah: 11,
-//     },
-//   ];
+function App() {
+  // Sample data for the radar chart
+  const data = [
+    {
+      taste: "Insomnia",
+      chardonay: 9,
+      carmenere: 15,
+      syrah: 7,
+    },
+    {
+      taste: "Restless",
+      chardonay: 5,
+      carmenere: 7,
+      syrah: 18,
+    },
+    {
+      taste: "Mania",
+      chardonay: 6,
+      carmenere: 4,
+      syrah: 10,
+    },
+    {
+      taste: "Headaches",
+      chardonay: 7,
+      carmenere: 18,
+      syrah: 5,
+    },
+    {
+      taste: "Self_harm",
+      chardonay: 3,
+      carmenere: 5,
+      syrah: 11,
+    },
+  ];
 
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <h1>Radar Chart Example</h1>
-//       </header>
-//       <main>
-//         <div className="chart-container">
-//           {/* Use the MyResponsiveRadar component with your data */}
-//           <MyResponsiveRadar data={data} />
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Radar Chart Example</h1>
+      </header>
+      <main>
+        <div className="chart-container">
+          {/* Use the MyResponsiveRadar component with your data */}
+          <MyResponsiveRadar data={data} />
+        </div>
+      </main>
+    </div>
+  );
+}
 
-// export default App;
+export default App;
 
 // import MyResponsiveLine from "./Responsiveline"; // Import your MyResponsiveLine component
 
@@ -349,167 +349,167 @@ import "./App.css";
 
 // export default App;
 
-import MyResponsiveAreaBump from "./MyResponsiveAreaBump";
+// import MyResponsiveAreaBump from "./MyResponsiveAreaBump";
 
-function App() {
-  const data = [
-    {
-      id: "Flashbacks",
-      data: [
-        {
-          x: 20,
-          y: 23,
-        },
-        {
-          x: 21,
-          y: 28,
-        },
-        {
-          x: 22,
-          y: 10,
-        },
-        {
-          x: 23,
-          y: 28,
-        },
-        {
-          x: 24,
-          y: 26,
-        },
-        {
-          x: 25,
-          y: 20,
-        },
-      ],
-    },
-    {
-      id: "Nightmares",
-      data: [
-        {
-          x: 20,
-          y: 23,
-        },
-        {
-          x: 21,
-          y: 10,
-        },
-        {
-          x: 22,
-          y: 13,
-        },
-        {
-          x: 23,
-          y: 22,
-        },
-        {
-          x: 24,
-          y: 18,
-        },
-        {
-          x: 25,
-          y: 10,
-        },
-      ],
-    },
-    {
-      id: "Excercise",
-      data: [
-        {
-          x: 20,
-          y: 16,
-        },
-        {
-          x: 21,
-          y: 22,
-        },
-        {
-          x: 22,
-          y: 28,
-        },
-        {
-          x: 23,
-          y: 21,
-        },
-        {
-          x: 24,
-          y: 15,
-        },
-        {
-          x: 25,
-          y: 26,
-        },
-      ],
-    },
-    {
-      id: "Positive_socialising",
-      data: [
-        {
-          x: 20,
-          y: 23,
-        },
-        {
-          x: 21,
-          y: 11,
-        },
-        {
-          x: 22,
-          y: 30,
-        },
-        {
-          x: 23,
-          y: 20,
-        },
-        {
-          x: 24,
-          y: 17,
-        },
-        {
-          x: 25,
-          y: 19,
-        },
-      ],
-    },
-    {
-      id: "Isolation",
-      data: [
-        {
-          x: 20,
-          y: 20,
-        },
-        {
-          x: 21,
-          y: 20,
-        },
-        {
-          x: 22,
-          y: 13,
-        },
-        {
-          x: 23,
-          y: 28,
-        },
-        {
-          x: 24,
-          y: 22,
-        },
-        {
-          x: 25,
-          y: 13,
-        },
-      ],
-    },
-  ];
+// function App() {
+//   const data = [
+//     {
+//       id: "Flashbacks",
+//       data: [
+//         {
+//           x: 20,
+//           y: 23,
+//         },
+//         {
+//           x: 21,
+//           y: 28,
+//         },
+//         {
+//           x: 22,
+//           y: 10,
+//         },
+//         {
+//           x: 23,
+//           y: 28,
+//         },
+//         {
+//           x: 24,
+//           y: 26,
+//         },
+//         {
+//           x: 25,
+//           y: 20,
+//         },
+//       ],
+//     },
+//     {
+//       id: "Nightmares",
+//       data: [
+//         {
+//           x: 20,
+//           y: 23,
+//         },
+//         {
+//           x: 21,
+//           y: 10,
+//         },
+//         {
+//           x: 22,
+//           y: 13,
+//         },
+//         {
+//           x: 23,
+//           y: 22,
+//         },
+//         {
+//           x: 24,
+//           y: 18,
+//         },
+//         {
+//           x: 25,
+//           y: 10,
+//         },
+//       ],
+//     },
+//     {
+//       id: "Excercise",
+//       data: [
+//         {
+//           x: 20,
+//           y: 16,
+//         },
+//         {
+//           x: 21,
+//           y: 22,
+//         },
+//         {
+//           x: 22,
+//           y: 28,
+//         },
+//         {
+//           x: 23,
+//           y: 21,
+//         },
+//         {
+//           x: 24,
+//           y: 15,
+//         },
+//         {
+//           x: 25,
+//           y: 26,
+//         },
+//       ],
+//     },
+//     {
+//       id: "Positive_socialising",
+//       data: [
+//         {
+//           x: 20,
+//           y: 23,
+//         },
+//         {
+//           x: 21,
+//           y: 11,
+//         },
+//         {
+//           x: 22,
+//           y: 30,
+//         },
+//         {
+//           x: 23,
+//           y: 20,
+//         },
+//         {
+//           x: 24,
+//           y: 17,
+//         },
+//         {
+//           x: 25,
+//           y: 19,
+//         },
+//       ],
+//     },
+//     {
+//       id: "Isolation",
+//       data: [
+//         {
+//           x: 20,
+//           y: 20,
+//         },
+//         {
+//           x: 21,
+//           y: 20,
+//         },
+//         {
+//           x: 22,
+//           y: 13,
+//         },
+//         {
+//           x: 23,
+//           y: 28,
+//         },
+//         {
+//           x: 24,
+//           y: 22,
+//         },
+//         {
+//           x: 25,
+//           y: 13,
+//         },
+//       ],
+//     },
+//   ];
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Area Bump Chart Example</h1>
-      </header>
-      <main>
-        <MyResponsiveAreaBump data={data} />
-      </main>
-    </div>
-  );
-}
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <h1>Area Bump Chart Example</h1>
+//       </header>
+//       <main>
+//         <MyResponsiveAreaBump data={data} />
+//       </main>
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
